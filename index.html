@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form Inputs - Getting User Input</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>&ltCoding Workshop Registration&gt</h1>
+        <div class="behindheader">
+            <h1>&ltCoding Workshop Registration&gt</h1>
+        </div>
+    </div>
+
+    <h4>&ltLearn to code the best forms to win prizes&gt</h4>
+
+    <form>
+        <!-- Full name -->
+        <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="<input type=text>" required>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="<input type=email>" required>
+        </div>
+        <!-- Phone -->
+        <div class="form-group">
+            <label for="contact-phone">Contact Phone:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" placeholder="<input type=tel>" required>
+        </div>
+        <!-- Age -->
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="<input type=num>" required>
+        </div>
+        <!-- Gender -->
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <!-- SELECT -->
+            <select name="gender" id="gender">
+                <option value="" disabled selected hidden>Not required</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Transgender">Transgender</option>
+                <option value="Non-binary/non-conforming">Non-binary/non-conforming</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="programming-experience">Programming Experience:</label>
+            <select name="programming-experience" id="programming-experience" required>
+                <option value=""></option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="workshop-sessions">Workshop Sessions:</label>
+            <select name="workshop-sessions" id="workshop-sessions" required>
+                <option value=""></option>
+                <option value="12.30pm">12.30pm</option>
+                <option value="4.30pm">4.30pm</option>
+                <option value="6.30pm">6.30pm</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments-questions">Comments/Questions:</label>
+            <input type="text" id="commments-questions" name="commments-questions">
+        </div>
+
+        <div class="form-group">
+            <button id="submitBtn">Sign Up</button>
+        </div>
+    </form>
+
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="results">
+            </div>
+            <button id="closeModal" class="close">Close</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
